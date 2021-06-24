@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwj.common.Dao.MysqlDao">
+        <!--  实体类和数据表之间的映射关系  -->
+    <resultMap id="filmMapper" type="com.cwj.common.domain.MysqlFilm">
+        <id column="id" property="id"></id>
+        <result property="title" column="title"></result>
+        <result property="protagonist" column="protagonist"></result>
+        <result property="director" column="director"></result>
+        <result property="type" column="type"></result>
+        <result property="releaseDate" column="release_date"></result>
+        <result property="synopsis" column="synopsis"></result>
+        <result property="location" column="location"></result>
+        <result property="filmSource" column="film_source"></result>
+    </resultMap>
+
+    <select id="findFilmsByTitle" resultMap="filmMapper" parameterType="java.lang.String">
+        select * from film where title=#{value};
+    </select>
+
+    <select id="FindAll" resultMap="filmMapper">
+        select * from film;
+    </select>
+
+    <select id="FindType" resultType="java.lang.String">
+        select distinct type from film;
+    </select>
+
+    <insert id="InsertFilm" parameterType="com.cwj.common.domain.MysqlFilm">
+        INSERT INTO film(title,protagonist,director,type,release_date,synopsis,location,film_source)
+        VALUE(#{title},#{protagonist},#{director},#{type},#{releaseDate},#{synopsis},#{location},#{filmSource});
+    </insert>
+</mapper>

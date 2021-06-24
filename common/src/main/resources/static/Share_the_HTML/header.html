@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <!--设置过期时间设置0为直接过期并清除缓存-->
+    <meta http-equiv="Expires" content="0">
+    <!--设置不缓存页面-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--设置不修改消息存储-->
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!--同上-->
+    <meta http-equiv="Cache" content="no-cache">
+
+
+</head>
+
+<body>
+
+<header class="site-header" id="ShareHeader">
+    <div class="container">
+        <a href="homepage.html" id="branding">
+            <img src="../images/logo.png" alt="" class="logo">
+            <div class="logo-copy">
+                <h1 class="site-title" id="h1">Home网站</h1>
+                <small class="site-description">欢迎光临</small><br/>
+                <small class="site-description" >Welcome</small><br />
+            </div>
+        </a> <!-- #branding -->
+
+        <div class="main-navigation">
+            <a href="UpFilm.html" style="float: left;color: green">上传</a>&nbsp;&nbsp;
+            <span style="float: right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a style="color: greenyellow"  id="userName" href="#" ></a>
+            <a href="signUp.html" style="float: right;color: blue" id="signUp">注册</a>
+            <span style="float: right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+            <a  href="signIn.html" style="float: right;color: red" id="signIn">登录</a>
+            <br />
+            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+            <ul class="menu" id="ul" name="ulA">
+                <li class="menu-item"><a href="#" >主页</a></li>
+                <li class="menu-item"><a href="#" >电影</a></li>
+                <li class="menu-item"><a href="#">电视剧</a></li>
+                <li class="menu-item"><a href="#">动漫</a></li>
+                <li class="menu-item"><a href="#">综艺</a></li>
+            </ul> <!-- .menu -->
+
+            <form action="#" method="get" id="form">
+                <button style="float: right"><i class="fa fa-search" ></i></button>
+                <input type="text" placeholder="请输入您要搜索的内容" style="float: right" id="searchBox" name="searchBox" >
+
+            </form>
+
+        </div> <!-- .main-navigation -->
+        <div class="mobile-navigation" id="button"></div>
+
+    </div>
+</header>
+
+</body>
+</html>

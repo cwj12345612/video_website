@@ -1,0 +1,13 @@
+let commonUrl =Cookies.get('commonUrl');
+let UserUrl=Cookies.get("UserUrl");
+let  TypeMap=new Map([['cartoon','动漫'],['movie','电影'],['teleplay','电视剧'],['variety','综艺']]);
+let leftTypeMap=new Map([['动漫','cartoon'],['电影','movie'],['电视剧','teleplay'],['综艺','variety']]);
+let explain_name="explain";
+let homepage_name="homepage";
+let MovieSection_name="MovieSection";
+let play_name="play";
+let searchResult_name="searchResult";
+let signIn_name="signIn";
+let signUp_name="signUp";
+let UpFilm_name="UpFilm";
+let UpFilmStatus_name="UpFilmStatus";

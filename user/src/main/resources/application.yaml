@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:mysql:///video_website
+
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+server:
+  servlet:
+    context-path: /user
+  port: 8080
+mybatis:
+  mapper-locations:  classpath:mybatis/Mapper/userMapper.xml

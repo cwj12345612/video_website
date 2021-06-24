@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql:///video_website
+    type: com.zaxxer.hikari.HikariDataSource
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+      enabled: true
+  web:
+    resources:
+      static-locations: classpath:/static/ , classpath:/templates/
+server:
+  servlet:
+    context-path: /
+  port: 80
+mybatis:
+  mapper-locations: classpath:mybatis/Mapper/MysqlDaoMapper.xml

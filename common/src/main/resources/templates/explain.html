@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<title id="title">电影说明页</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="sass/style.css">
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js" type="text/javascript"></script>
+		<script src="js/ie-support/respond.js" type="text/javascript"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+
+	<div id="site-content">
+			<div id="header"></div>
+			<main class="main-content" id="ma">
+				<div class="container">
+					<div class="page">
+						<div class="breadcrumbs">
+							<a href="homepage.html">主页</a>
+							<a href="#" id="TypeFilm"></a>
+							<span id="explain"></span>
+						</div>
+
+						<div class="content">
+							<div class="row">
+								<div class="col-md-6">
+									<figure class="movie-poster"><img src="#" alt="#" id="img"></figure>
+								</div>
+
+								<div class="col-md-6">
+									<div style="font-size: 20px" id="play"><a href="#"  style="color: blue" id="againPlay"><u>在线播放</u><span style="color: green">( 若影片没字幕, 请下载后用本地的播放器 如<a style="color: red" href="https://player.qq.com/">QQ影音</a><span style="color: green"> 播放 再去</span><a style="color: red" href="https://subhd.tv/">字幕网站</a><span style="color: green">上找字幕)</span></span></a></div>
+									<div style="font-size: 20px" id="down"><a href="#" style="color: blue" id="downAll"><u>下载</u><span style="color: green">(点击“下载”下载全部影片 ,单击分集下载一集<span id="size"></span>)</span></a></div>
+									<ul class="movie-meta">
+										<li><strong>影片名称:</strong>
+											<strong style="color: red" id="filmName">请输入影片名称</strong>
+											</li>
+										<li><strong>豆瓣评分 (虚假):</strong>
+											<div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating">3.00</strong> out of 5</span></div>
+										</li>
+										<li><strong >时长：</strong> <span id="length"></span></li>
+										<li><strong >集数：</strong> <span id="episodes"></span></li>
+										<li><strong>上映时间：</strong><span id="releaseDate"></span></li>
+										<li><strong>类型：</strong><span id="type"></span></li>
+										<li><strong>来源: </strong><span id="source"></span></li>
+									</ul>
+									<ul class="starring">
+										<li><strong>导演:</strong><span id="director"></span></li>
+										<li><strong>主演: </strong><span id="protagonist"></span></li>
+									</ul>
+								</div>
+							</div> <!-- .row -->
+							<div class="entry-content" id="synopsis">
+							</div>
+						</div>
+					</div></div> <!-- .container -->
+			</main>
+			<div id="footer"></div>
+		</div>
+		<!-- Default snippet for navigation -->
+		<script src="js/min/jquery-1.11.1.min.js" ></script>
+		<script src="js/min/plugins.js" ></script>
+		<script src="js/min/app.js" ></script>
+
+
+	</body>
+	<!--	要使用网上的jquery Cookie  使用本地的jquery.min.js会报错-->
+	<!--	<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>-->
+	<!--	<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>-->
+
+	<script src="js/min/js.cookie.js" type="text/javascript"></script>
+<!--	&lt;!&ndash;		    已完成的功能和请求的Servlet&ndash;&gt;-->
+	<script type="text/javascript" charset="GBK" src="js/MyJs/share/global.js"></script>
+	<script type="text/javascript" charset="GBK" src="js/MyJs/share/functions.js"></script>
+	<script type="text/javascript"  charset="GBK" src="js/MyJs/share/shareHeaderFoot.js"></script>
+
+
+	<!--	填充影片详细页信息   -->
+	<script type="text/javascript" charset="GBK"  src="js/MyJs/explain/global.js"></script>
+	<script type="text/javascript" charset="GBK" src="js/MyJs/explain/functions.js"></script>
+	<script type="text/javascript"  charset="GBK" src="js/MyJs/explain/FillFilmInformation.js"></script>
+
+	<!--	-->
+
+
+	<!---->
+</html>

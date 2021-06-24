@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cwj.user.dao.userDao">
+        <!--  实体类和数据表之间的映射关系  -->
+    <resultMap id="userMapper" type="com.cwj.user.domain.user">
+        <id column="id" property="id"></id>
+        <result property="username" column="username"></result>
+        <result property="password" column="password"></result>
+        <result property="email" column="email"></result>
+         </resultMap>
+
+    <insert id="insertUser" parameterType="com.cwj.user.domain.user">
+        insert into user(id, username, password,email)
+        value (null,#{username},#{password},#{email});
+
+    </insert>
+
+    <select id="findUser" resultMap="userMapper" parameterType="com.cwj.user.domain.user">
+        select * from user where password=#{password} and username=#{username};
+    </select>
+    <select id="findAll" resultType="com.cwj.user.domain.user">
+        select * from user;
+    </select>
+
+
+</mapper>
